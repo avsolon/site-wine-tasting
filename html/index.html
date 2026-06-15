@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasting & Talk — Винный клуб в Новосибирске</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="bg-pattern">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-6">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <a href="#" class="font-serif text-2xl md:text-3xl text-gold tracking-wider">
+                Tasting <span class="text-white/80">&</span> Talk
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#about" class="text-sm tracking-widest uppercase text-white/70 hover:text-gold transition-colors">О клубе</a>
+                <a href="#tastings" class="text-sm tracking-widest uppercase text-white/70 hover:text-gold transition-colors">Дегустации</a>
+                <a href="#collections" class="text-sm tracking-widest uppercase text-white/70 hover:text-gold transition-colors">Коллекции</a>
+                <a href="#gallery" class="text-sm tracking-widest uppercase text-white/70 hover:text-gold transition-colors">Галерея</a>
+                <a href="#contacts" class="text-sm tracking-widest uppercase text-white/70 hover:text-gold transition-colors">Контакты</a>
+            </div>
+            <a href="#contacts" target="_blank" class="btn-gold bg-gold text-black px-6 py-3 text-sm tracking-widest uppercase font-semibold">
+                Записаться
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://image.qwenlm.ai/public_source/ba0d3d10-dec2-4bb6-a1eb-f12b097bb5df/12bffb38c-7ff9-49f9-aa7b-e8d59c4c648c.png" 
+                 alt="Wine tasting" 
+                 class="w-full h-full object-cover">
+            <div class="hero-overlay absolute inset-0"></div>
+        </div>
+
+        <!-- Decorative particles -->
+        <div class="particle" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+        <div class="particle" style="top: 60%; left: 80%; animation-delay: 2s;"></div>
+        <div class="particle" style="top: 30%; left: 70%; animation-delay: 4s;"></div>
+        <div class="particle" style="top: 70%; left: 20%; animation-delay: 1s;"></div>
+
+        <div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
+            <div class="fade-in">
+                <p class="text-gold tracking-[0.3em] uppercase text-sm mb-6 font-medium">Винный клуб в Новосибирске</p>
+                <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-tight mb-8">
+                    Искусство<br>
+                    <span class="italic text-gold">вина</span> и общения
+                </h1>
+                <div class="gold-divider mb-8"></div>
+                <p class="text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-12 font-light leading-relaxed">
+                    Эксклюзивные дегустации, редкие коллекции и атмосфера, в которой каждое вино рассказывает свою историю
+                </p>
+                <a href="#tastings" target="_blank" 
+                   class="pulse-btn btn-gold inline-flex items-center gap-3 bg-gold text-black px-10 py-5 text-sm tracking-widest uppercase font-semibold">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.94z"/>
+                    </svg>
+                    Записаться на дегустацию
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
+            <span class="text-gold/60 text-xs tracking-widest uppercase">Scroll</span>
+            <svg class="w-5 h-5 text-gold/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 md:py-32 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="fade-up">
+                    <p class="text-gold tracking-[0.3em] uppercase text-xs mb-4 font-medium">О нашем клубе</p>
+                    <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-white mb-8 leading-tight">
+                        Место, где рождается<br>
+                        <span class="italic text-gold">вдохновение</span>
+                    </h2>
+                    <div class="gold-divider mb-8" style="margin: 0 0 2rem 0;"></div>
+                    <p class="text-white/70 text-lg leading-relaxed mb-6 font-light">
+                        <strong class="text-gold font-medium">Tasting & Talk</strong> — это закрытый винный клуб в самом сердце Новосибирска, созданный для ценителей благородных напитков и изысканного общения.
+                    </p>
+                    <p class="text-white/60 leading-relaxed mb-6 font-light">
+                        Мы собираем лучших сомелье, коллекционные вина со всего мира и создаём атмосферу, в которой каждый гость чувствует себя особенным. Наши дегустации — это не просто знакомство с вином, это путешествие в мир вкусов, ароматов и историй.
+                    </p>
+                    <p class="text-white/60 leading-relaxed font-light">
+                        Присоединяйтесь к нашему сообществу единомышленников, где каждое мероприятие становится незабываемым событием.
+                    </p>
+                </div>
+                <div class="fade-up relative" style="transition-delay: 0.2s;">
+                    <div class="ornament-border p-2">
+                        <img src="https://image.qwenlm.ai/public_source/ba0d3d10-dec2-4bb6-a1eb-f12b097bb5df/10f573b54-8ae4-40db-be84-43d74ea6c787.png" 
+                             alt="Wine glasses" 
+                             class="w-full h-[500px] object-cover">
+                    </div>
+                    <!-- Stats -->
+                    <div class="absolute -bottom-8 -left-8 bg-dark-card border border-gold/30 p-6 hidden md:block">
+                        <p class="font-serif text-4xl text-gold mb-1">150+</p>
+                        <p class="text-xs tracking-widest uppercase text-white/60">Проведённых дегустаций</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div class="grid md:grid-cols-3 gap-8 mt-32">
+                <div class="fade-up text-center p-8 border border-gold/20 hover:border-gold/50 transition-colors">
+                    <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-gold/30 rounded-full">
+                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-2xl text-white mb-4">Экспертные сомелье</h3>
+                    <p class="text-white/60 font-light leading-relaxed">Сертифицированные специалисты с международным опытом проведут вас через мир вина</p>
+                </div>
+                <div class="fade-up text-center p-8 border border-gold/20 hover:border-gold/50 transition-colors" style="transition-delay: 0.15s;">
+                    <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-gold/30 rounded-full">
+                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-2xl text-white mb-4">Редкие коллекции</h3>
+                    <p class="text-white/60 font-light leading-relaxed">Эксклюзивные вина из лучших виноделен мира, недоступные в обычных магазинах</p>
+                </div>
+                <div class="fade-up text-center p-8 border border-gold/20 hover:border-gold/50 transition-colors" style="transition-delay: 0.3s;">
+                    <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-gold/30 rounded-full">
+                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-2xl text-white mb-4">Закрытое сообщество</h3>
+                    <p class="text-white/60 font-light leading-relaxed">Круг единомышленников, где рождаются friendships и деловые связи</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tastings Section -->
+    <section id="tastings" class="py-24 md:py-32 bg-dark-card relative overflow-hidden">
+        <div class="absolute inset-0 opacity-30">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-burgundy/20 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-20 fade-up">
+                <p class="text-gold tracking-[0.3em] uppercase text-xs mb-4 font-medium">Наши мероприятия</p>
+                <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-white mb-8">
+                    Винные <span class="italic text-gold">дегустации</span>
+                </h2>
+                <div class="gold-divider"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tasting Card 1 -->
+                <div class="fade-up collection-card bg-dark border border-gold/20 p-8 group">
+                    <div class="text-gold text-6xl font-serif mb-4 opacity-50 group-hover:opacity-100 transition-opacity">01</div>
+                    <h3 class="font-serif text-2xl text-white mb-4">Классическая дегустация</h3>
+                    <p class="text-white/60 font-light leading-relaxed mb-6">
+                        Знакомство с основными сортами винограда и регионами. Идеально для начинающих ценителей. 5-7 образцов вина с профессиональным сопровождением.
+                    </p>
+                    <div class="flex items-center gap-4 text-sm">
+                        <span class="text-gold">2 часа</span>
+                        <span class="text-white/30">•</span>
+                        <span class="text-white/60">до 12 гостей</span>
+                    </div>
+                </div>
+
+                <!-- Tasting Card 2 -->
+                <div class="fade-up collection-card bg-dark border border-gold/20 p-8 group" style="transition-delay: 0.15s;">
+                    <div class="text-gold text-6xl font-serif mb-4 opacity-50 group-hover:opacity-100 transition-opacity">02</div>
+                    <h3 class="font-serif text-2xl text-white mb-4">Вертикальная дегустация</h3>
+                    <p class="text-white/60 font-light leading-relaxed mb-6">
+                        Сравнение вин одного производителя разных лет урожая. Погружение в историю винодельни и влияние терруара на вкус.
+                    </p>
+                    <div class="flex items-center gap-4 text-sm">
+                        <span class="text-gold">3 часа</span>
+                        <span class="text-white/30">•</span>
+                        <span class="text-white/60">до 8 гостей</span>
+                    </div>
+                </div>
+
+                <!-- Tasting Card 3 -->
+                <div class="fade-up collection-card bg-dark border border-gold/20 p-8 group" style="transition-delay: 0.3s;">
+                    <div class="text-gold text-6xl font-serif mb-4 opacity-50 group-hover:opacity-100 transition-opacity">03</div>
+                    <h3 class="font-serif text-2xl text-white mb-4">Гастро-пара</h3>
+                    <p class="text-white/60 font-light leading-relaxed mb-6">
+                        Идеальное сочетание вина и высокой кухни. Каждый бокал дополняется авторской закуской от нашего шеф-повара.
+                    </p>
+                    <div class="flex items-center gap-4 text-sm">
+                        <span class="text-gold">2.5 часа</span>
+                        <span class="text-white/30">•</span>
+                        <span class="text-white/60">до 10 гостей</span>
+                    </div>
+                </div>
+
+                <!-- Tasting Card 4 -->
+                <div class="fade-up collection-card bg-dark border border-gold/20 p-8 group">
+                    <div class="text-gold text-6xl font-serif mb-4 opacity-50 group-hover:opacity-100 transition-opacity">04</div>
+                    <h3 class="font-serif text-2xl text-white mb-4">Вечер редких вин</h3>
+                    <p class="text-white/60 font-light leading-relaxed mb-6">
+                        Эксклюзивная дегустация коллекционных и редких вин. Возможность попробовать то, что недоступно в свободной продаже.
+                    </p>
+                    <div class="flex items-center gap-4 text-sm">
+                        <span class="text-gold">3 часа</span>
+                        <span class="text-white/30">•</span>
+                        <span class="text-white/60">до 6 гостей</span>
+                    </div>
+                </div>
+
+                <!-- Tasting Card 5 -->
+                <div class="fade-up collection-card bg-dark border border-gold/20 p-8 group" style="transition-delay: 0.15s;">
+                    <div class="text-gold text-6xl font-serif mb-4 opacity-50 group-hover:opacity-100 transition-opacity">05</div>
+                    <h3 class="font-serif text-2xl text-white mb-4">Мастер-класс</h3>
+                    <p class="text-white/60 font-light leading-relaxed mb-6">
+                        Обучение искусству дегустации: как правильно оценивать цвет, аромат и вкус. Практические навыки настоящего ценителя.
+                    </p>
+                    <div class="flex items-center gap-4 text-sm">
+                        <span class="text-gold">2 часа</span>
+                        <span class="text-white/30">•</span>
+                        <span class="text-white/60">до 15 гостей</span>
+                    </div>
+                </div>
+
+                <!-- Tasting Card 6 -->
+                <div class="fade-up collection-card bg-dark border border-gold/20 p-8 group" style="transition-delay: 0.3s;">
+                    <div class="text-gold text-6xl font-serif mb-4 opacity-50 group-hover:opacity-100 transition-opacity">06</div>
+                    <h3 class="font-serif text-2xl text-white mb-4">Приватное мероприятие</h3>
+                    <p class="text-white/60 font-light leading-relaxed mb-6">
+                        Индивидуальная программа для вашей компании. Корпоративы, дни рождения, романтические вечера — мы создадим идеальное событие.
+                    </p>
+                    <div class="flex items-center gap-4 text-sm">
+                        <span class="text-gold">По запросу</span>
+                        <span class="text-white/30">•</span>
+                        <span class="text-white/60">до 20 гостей</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-16 fade-up">
+                <a href="https://t.me/WineTastingBot_bot" target="_blank" 
+                   class="btn-gold inline-flex items-center gap-3 bg-gold text-black px-10 py-5 text-sm tracking-widest uppercase font-semibold">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.94z"/>
+                    </svg>
+                    Забронировать через Telegram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section id="collections" class="py-24 md:py-32 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <!-- <div class="fade-up order-2 md:order-1"> -->
+                <div class="ornament-border p-2">
+                    <div class="relative">
+                        <img src="https://image.qwenlm.ai/public_source/ba0d3d10-dec2-4bb6-a1eb-f12b097bb5df/143361280-3e78-4034-a2eb-07b0c04efba9.png" 
+                             alt="Wine collection" 
+                             class="w-full h-[600px] object-cover">
+                        <!-- <div class="absolute inset-0 border border-gold/30 m-4 pointer-events-none"></div> -->
+                    </div>
+                </div>
+                <div class="fade-up order-1 md:order-2">
+                    <p class="text-gold tracking-[0.3em] uppercase text-xs mb-4 font-medium">Наши коллекции</p>
+                    <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-white mb-8 leading-tight">
+                        Вина со всего <span class="italic text-gold">мира</span>
+                    </h2>
+                    <div class="gold-divider mb-8" style="margin: 0 0 2rem 0;"></div>
+                    <p class="text-white/70 text-lg leading-relaxed mb-8 font-light">
+                        Мы тщательно отбираем каждое вино для нашей коллекции. Прямые поставки от виноделен, редкие урожаи и эксклюзивные партии — всё это ждёт вас в Tasting & Talk.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4 border-b border-gold/20 pb-6">
+                            <span class="font-serif text-3xl text-gold">🇫🇷</span>
+                            <div>
+                                <h4 class="font-serif text-xl text-white mb-1">Франция</h4>
+                                <p class="text-white/60 font-light text-sm">Бордо, Бургундия, Шампань, Рона, Луара</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 border-b border-gold/20 pb-6">
+                            <span class="font-serif text-3xl text-gold">🇮🇹</span>
+                            <div>
+                                <h4 class="font-serif text-xl text-white mb-1">Италия</h4>
+                                <p class="text-white/60 font-light text-sm">Тоскана, Пьемонт, Венето, Сицилия</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 border-b border-gold/20 pb-6">
+                            <span class="font-serif text-3xl text-gold">🇪🇸</span>
+                            <div>
+                                <h4 class="font-serif text-xl text-white mb-1">Испания</h4>
+                                <p class="text-white/60 font-light text-sm">Риоха, Рибера-дель-Дуэро, Приорат</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="font-serif text-3xl text-gold">🌍</span>
+                            <div>
+                                <h4 class="font-serif text-xl text-white mb-1">Новый Свет</h4>
+                                <p class="text-white/60 font-light text-sm">Калифорния, Чили, Австралия, Новая Зеландия, Аргентина</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 md:py-32 bg-dark-card relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20 fade-up">
+                <p class="text-gold tracking-[0.3em] uppercase text-xs mb-4 font-medium">Атмосфера</p>
+                <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-white mb-8">
+                    Галерея <span class="italic text-gold">событий</span>
+                </h2>
+                <div class="gold-divider"></div>
+                <p class="text-white/60 mt-8 max-w-2xl mx-auto font-light">
+                    Моменты, которые мы создаём вместе с нашими гостями. Каждая дегустация — это уникальная история.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="fade-up gallery-item lg:col-span-2 lg:row-span-2 aspect-square md:aspect-auto">
+                    <img src="https://image.qwenlm.ai/public_source/ba0d3d10-dec2-4bb6-a1eb-f12b097bb5df/12bffb38c-7ff9-49f9-aa7b-e8d59c4c648c.png" 
+                         alt="Wine tasting event" 
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="fade-up gallery-item aspect-square" style="transition-delay: 0.1s;">
+                    <img src="https://image.qwenlm.ai/public_source/ba0d3d10-dec2-4bb6-a1eb-f12b097bb5df/10f573b54-8ae4-40db-be84-43d74ea6c787.png" 
+                         alt="Wine glasses" 
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="fade-up gallery-item aspect-square" style="transition-delay: 0.2s;">
+                    <img src="https://image.qwenlm.ai/public_source/ba0d3d10-dec2-4bb6-a1eb-f12b097bb5df/1ecac194f-8cec-48c8-bc5c-a1f9e8e9423e.png" 
+                         alt="Sommelier" 
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="fade-up gallery-item lg:col-span-2 aspect-[2/1]" style="transition-delay: 0.3s;">
+                    <img src="https://image.qwenlm.ai/public_source/ba0d3d10-dec2-4bb6-a1eb-f12b097bb5df/1bff08ad3-5fc1-469d-ab98-2594c7d88db7.png" 
+                         alt="Wine tasting group" 
+                         class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <div class="text-center mt-16 fade-up">
+                <p class="text-white/50 text-sm italic font-light">
+                    * Здесь будут размещены фотографии с ваших дегустаций
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 md:py-32 relative overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://image.qwenlm.ai/public_source/ba0d3d10-dec2-4bb6-a1eb-f12b097bb5df/143361280-3e78-4034-a2eb-07b0c04efba9.png" 
+                 alt="Wine" 
+                 class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-b from-dark via-dark/90 to-dark"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10 fade-up">
+            <p class="text-gold tracking-[0.3em] uppercase text-xs mb-6 font-medium">Присоединяйтесь</p>
+            <h2 class="font-serif text-4xl md:text-6xl text-white mb-8 leading-tight">
+                Ваше путешествие<br>
+                в мир <span class="italic text-gold">вина</span> начинается здесь
+            </h2>
+            <div class="gold-divider mb-10"></div>
+            <p class="text-white/70 text-lg mb-12 font-light max-w-2xl mx-auto">
+                Запишитесь на ближайшую дегустацию через нашего Telegram-бота. Быстро, удобно и всегда под рукой.
+            </p>
+            <a href="https://t.me/WineTastingBot_bot" target="_blank" 
+               class="pulse-btn btn-gold inline-flex items-center gap-4 bg-gold text-black px-12 py-6 text-base tracking-widest uppercase font-semibold">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.94z"/>
+                </svg>
+                Открыть Telegram-бот
+            </a>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="py-24 md:py-32 bg-dark-card relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20 fade-up">
+                <p class="text-gold tracking-[0.3em] uppercase text-xs mb-4 font-medium">Свяжитесь с нами</p>
+                <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-white mb-8">
+                    Контакты <span class="italic text-gold">клуба</span>
+                </h2>
+                <div class="gold-divider"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="fade-up text-center p-8 border border-gold/20 hover:border-gold/50 transition-colors">
+                    <div class="w-14 h-14 mx-auto mb-6 flex items-center justify-center border border-gold/30 rounded-full">
+                        <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-xl text-white mb-3">Адрес</h3>
+                    <p class="text-white/60 font-light">г. Новосибирск,<br>ул. Винная, д. 1</p>
+                </div>
+
+                <div class="fade-up text-center p-8 border border-gold/20 hover:border-gold/50 transition-colors" style="transition-delay: 0.1s;">
+                    <div class="w-14 h-14 mx-auto mb-6 flex items-center justify-center border border-gold/30 rounded-full">
+                        <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-xl text-white mb-3">Часы работы</h3>
+                    <p class="text-white/60 font-light">Ежедневно<br>с 17:00 до 23:00</p>
+                </div>
+
+                <div class="fade-up text-center p-8 border border-gold/20 hover:border-gold/50 transition-colors" style="transition-delay: 0.2s;">
+                    <div class="w-14 h-14 mx-auto mb-6 flex items-center justify-center border border-gold/30 rounded-full">
+                        <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-xl text-white mb-3">Телефон</h3>
+                    <a href="tel:+79991234567" class="text-white/60 font-light hover:text-gold transition-colors">+7 (999) 123-45-67</a>
+                </div>
+
+                <div class="fade-up text-center p-8 border border-gold/20 hover:border-gold/50 transition-colors" style="transition-delay: 0.3s;">
+                    <div class="w-14 h-14 mx-auto mb-6 flex items-center justify-center border border-gold/30 rounded-full">
+                        <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.94z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-xl text-white mb-3">Telegram</h3>
+                    <a href="https://t.me/WineTastingBot_bot" target="_blank" class="text-gold font-light hover:text-white transition-colors">Запись на дегустацию</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gold/20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="font-serif text-2xl text-gold tracking-wider">
+                    Tasting <span class="text-white/80">&</span> Talk
+                </div>
+                <p class="text-white/40 text-sm font-light">
+                    © 2026 Винный клуб «Tasting & Talk». Все права защищены.
+                </p>
+                <div class="flex items-center gap-6">
+                    <a href="https://t.me/WineTastingBot_bot" target="_blank" class="text-white/40 hover:text-gold transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.94z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,7 @@
+services:
+  site-wine-tasting:
+    build: .
+    container_name: site-wine-tasting
+    ports:
+      - "8083:80"
+    restart: unless-stopped
